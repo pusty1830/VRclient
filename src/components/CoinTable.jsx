@@ -23,7 +23,7 @@ export default function CoinTable({ coins }) {
               </div>
 
               <p className="text-2xl font-semibold text-yellow-300 mb-1">
-                {formatCurrency(coin.current_price)}
+                {formatCurrency(coin.price)}
               </p>
               <p className="text-sm text-gray-300 mb-1">
                 Market Cap: {formatCurrency(coin.market_cap)}
@@ -39,7 +39,7 @@ export default function CoinTable({ coins }) {
               </p>
 
               <p className="text-xs text-gray-400 mt-3">
-                Last Updated: {new Date(coin.last_updated).toLocaleString()}
+                Last Updated: {new Date(coin.timestamp).toLocaleString()}
               </p>
             </div>
           </div>

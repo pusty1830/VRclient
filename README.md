@@ -1,12 +1,35 @@
-# React + Vite
+🌐 Live Demo
+Frontend hosted on Vercel:
+🔗 https://v-rclient.vercel.app/
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+# 🧑‍💻 VR Crypto Tracker – Frontend
 
-Currently, two official plugins are available:
+A React dashboard that displays the **top 10 cryptocurrencies** with live data from CoinGecko.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 📊 Features
 
-## Expanding the ESLint configuration
+- View Top 10 Cryptocurrencies
+- Shows:
+  - Coin Name
+  - Symbol
+  - Current Price (USD)
+  - Market Cap
+  - 24h % Change
+  - Last Updated Timestamp
+- Auto-refresh every 30 minutes
+- (Bonus) Search, Filter, or Sort (if implemented)
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## ⚙️ Tech Stack
+
+- React (with Vite or Create React App)
+- Axios
+- Tailwind CSS 
+- Deployed on **Vercel**
+
+## 🚀 Getting Started
+
+```bash
+git clone https://github.com/yourusername/VRclient.git
+cd VRclient
+npm install
+npm run dev

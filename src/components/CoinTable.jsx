@@ -2,10 +2,11 @@ import React from "react";
 import { formatCurrency, formatPercentage } from "../utils/formatters";
 
 export default function CoinTable({ coins }) {
+  console.log(coins);
   return (
     <div className="grid gap-8 sm:grid-cols-2 lg:grid-cols-3">
       {coins.map((coin) => {
-        const isPositive = coin.price_change_percentage_24h >= 0;
+        const isPositive = coin.change24h >= 0;
         return (
           <div
             key={coin.id}
@@ -34,8 +35,7 @@ export default function CoinTable({ coins }) {
                   isPositive ? "text-green-400" : "text-red-400"
                 }`}
               >
-                {isPositive ? "▲" : "▼"}{" "}
-                {formatPercentage(coin.price_change_percentage_24h)}
+                {isPositive ? "▲" : "▼"} {formatPercentage(coin.change24h)}
               </p>
 
               <p className="text-xs text-gray-400 mt-3">

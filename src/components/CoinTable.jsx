@@ -26,7 +26,7 @@ export default function CoinTable({ coins }) {
                 {formatCurrency(coin.price)}
               </p>
               <p className="text-sm text-gray-300 mb-1">
-                Market Cap: {formatCurrency(coin.market_cap)}
+                Market Cap: {formatCurrency(coin.marketCap)}
               </p>
 
               <p

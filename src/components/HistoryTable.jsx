@@ -30,7 +30,7 @@ export default function HistoryTable({ data }) {
                   coin.priceChange24h >= 0 ? "text-green-400" : "text-red-400"
                 }`}
               >
-                {formatPercentage(coin.priceChange24h)}
+                {formatPercentage(coin.change24h)}
               </td>
               <td className="py-2 px-3 text-xs text-gray-300">
                 {new Date(coin.timestamp).toLocaleString()}
